@@ -45,7 +45,6 @@ const styles = StyleSheet.create({
   }
 });
 
-
 ************ Home Screen *******************************
 
 ************ Add New Contact Screen *******************************
@@ -128,8 +127,8 @@ const styles = StyleSheet.create({
 
 ************ View Contact Screen *******************************
 
-
 ************ Edit Contact Screen *******************************
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
