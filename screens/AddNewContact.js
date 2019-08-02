@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableWithoutFeedback, ScrollView, Keyboard, AsyncStorage, Alert,  } from 'react-native';
+import { StyleSheet, Text, View, TouchableWithoutFeedback, ScrollView, Keyboard, AsyncStorage, Alert } from 'react-native';
 import { Form, Item, Input, Label, Button } from "native-base";
 
 export default class AdddNewContact extends React.Component {

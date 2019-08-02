@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableWithoutFeedback, Keyboard, AsyncStorage, Alert } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, TouchableWithoutFeedback, Keyboard, AsyncStorage, Alert } from 'react-native';
 import { Form, Item, Label, Input, Button } from 'native-base';
 
 export default class EditContact extends React.Component {
@@ -71,7 +71,7 @@ export default class EditContact extends React.Component {
       <TouchableWithoutFeedback onPress={() => {
         Keyboard.dismiss()
       }}>
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
           <Form>
             <Item style={styles.inputItem}>
               <Label>First Name</Label>
@@ -142,7 +142,8 @@ export default class EditContact extends React.Component {
           >
             <Text style={styles.buttonText}>Update</Text>
           </Button>
-        </View>
+          <View style={styles.empty}></View>
+        </ScrollView>
       </TouchableWithoutFeedback>
     );
   }
@@ -166,4 +167,8 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
   },
+  empty: {
+    height: 500,
+    backgroundColor: "#fff"
+  }
 });
