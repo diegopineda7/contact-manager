@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, FlatList, AsyncStorage } from 'react-native';
-import { Card, Item } from "native-base";
+import { Card } from "native-base";
 import { Entypo } from "@expo/vector-icons";
 
 export default class Home extends React.Component {
